@@ -43,7 +43,7 @@ Will result in:
 <p align="center" width="100%">
   <img src="./img/standard.png"> 
   </p>
-<br>
+
 The package contains four other functions `flexible_error()`, `flexible_success()`, `flexible_warning()`, and `flexible_info()` emulating the style of `st.error`, `st.success`, `st.warning`, and `st.info`, respectively. They have most of the same arguments as `flexible_callout()` with the exception of `background_color` and `font_color` which are fixed to match their counterparts.
 
 ``` python
@@ -61,7 +61,6 @@ flexible_info("This is a slightly smaller info message", font_size=10)
 <p align="center" width="100%">
   <img src="./img/emulate.png"> 
   </p>
-<br>
 
 ### Customization
 
@@ -85,7 +84,6 @@ col1, col2 = st.columns(2)
 flexible_info("Can be used in a column of choice.", container=col2)
 ```
 **Note:** These arguments are **not text elements**, it should directly reference the container!
-<br>
 
 #### Background and font color.
 The box background and font colors can be customized with `background_color` and `font_color` respectively. Accepted values include HEX color codes and [HTML color names](https://www.w3schools.com/tags/ref_colornames.asp).
@@ -99,7 +97,6 @@ flexible_callout("You can use custom colors!", background_color="#E0B0FF", font_
 <p align="center" width="100%">
   <img src="./img/custom_colors.png"> 
   </p>
-<br>
 
 #### Font size and alignment
 As seen previously, font size (in px) can be changed with the argument `font_size`. Text alignment inside the box can be changed with `alignment`, its options are `left` (default), `center`, `right`, and  `justify`.
@@ -117,7 +114,6 @@ flexible_callout("Line height can also be customized within the element", contai
 <p align="center" width="100%">
   <img src="./img/line_height.png"> 
   </p>
-<br>
 
 #### Border radius, padding, margin-bottom
 
@@ -132,7 +128,6 @@ flexible_callout("Can have rounded boxes.", container=st.sidebar, background_col
 <p align="center" width="100%">
   <img src="./img/rounded.png"> 
   </p>
-<br>
 
 The distinction between padding and margin can be see in the box element model below:
 
@@ -195,5 +190,4 @@ display_rainbow_text()
 <p align="center" width="100%">
   <img src="./img/fun_stuff.gif"> 
   </p>
-<br>
 
