@@ -1,14 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="st-flexible-status-elements",
+    name="st-flexible-callout-elements",
     version="0.1.0",
     description="A Streamlit package for flexible, customizable status elements",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="your.email@example.com",
-    url="https://github.com/yourusername/st-flexible-status-elements",
+    author="João L. Neto",
+    url="https://github.com/jlnetosci/st-flexible-callout-elements",
     packages=find_packages(),
     install_requires=[
         "streamlit>=1.13.0",
