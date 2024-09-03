@@ -11,7 +11,7 @@ setup(
     url="https://github.com/yourusername/st-flexible-status-elements",
     packages=find_packages(),
     install_requires=[
-        "streamlit>=0.87",
+        "streamlit>=1.13.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
