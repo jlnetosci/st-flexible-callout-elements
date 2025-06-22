@@ -30,6 +30,8 @@ Arguments:
 - border_radius (int): The border radius of the message box.
 - padding (int): The padding inside the message box in pixels.
 - margin_bottom (int): The margin below the message box in pixels.
+- icon (str): Appears on the left side of the box. Supports emojis (e.g., "ℹ️", "🚨") or Material Icons (e.g., ":material/info:").
+- icon_size (int): Icon size in pixels. If not defined, uses font_size.
 ```
 
 Calling the function with just a message and no other arguments, e.g.:
@@ -143,15 +145,57 @@ from st_flexible_callout_elements import flexible_callout
 flexible_callout("The boxes can be slimmer", padding=5)
 ```
 
+<p align="center" width="100%">
+  <img src="./img/padding.png"> 
+  </p>
+
 The distance between the box and the next element can be customized using the `margin_bottom` argument (default value is 20):
 
 ```python
 from st_flexible_callout_elements import flexible_callout
 
-flexible_callout("The boxes can be slimmer", margin_bottom=30)
+flexible_callout("The boxes can be slimmer", margin_bottom=0)
 ```
 
-#### Integration with other streamlit elements
+<p align="center" width="100%">
+  <img src="./img/margin.png"> 
+  </p>
+
+#### Icon
+
+As of v0.2.0 there is the possibility to insert custom icons (emojis, material icons) and their select their size in callout messages.
+
+```
+from st_flexible_callout_elements import flexible_warning
+
+flexible_warning("You can also add icons to your elements. e.g., emojis,", icon="⚠️")
+```
+
+<p align="center" width="100%">
+  <img src="./img/icon_emoji.png"> 
+  </p>
+
+```
+from st_flexible_callout_elements import flexible_success
+
+flexible_success("or icons in the <a href='https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Rounded'>Material Symbols</a> font library.", icon=":material/check:")
+```
+
+<p align="center" width="100%">
+  <img src="./img/material_icon.png"> 
+  </p>
+
+```
+from st_flexible_callout_elements import flexible_info
+
+flexible_info("You can also customize the size of the icon.", icon=":material/info:", icon_size=25)
+```
+
+<p align="center" width="100%">
+  <img src="./img/icon_size.png"> 
+  </p>
+
+### Integration with other streamlit elements
 
 The flexible callout elements can be integrated with other streamlit functions:
 
