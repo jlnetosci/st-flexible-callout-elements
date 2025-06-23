@@ -59,7 +59,7 @@ def flexible_callout(
         if icon.startswith(":material/") and icon.endswith(":"):
             icon_name = icon[10:-1]
             font_link = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />'
-            icon_content = f'<span class="material-symbols-rounded" style="font-size: {icon_size}px; color: {font_color};">{icon_name}</span>'
+            icon_content = f'<span class="material-symbols-rounded" style="font-size: {icon_size}px; color: {font_color}; vertical-align: middle;">{icon_name}</span>'
         else:
             # Handle emoji or other text icons
             icon_content = f'<span style="font-size: {icon_size}px;">{icon}</span>'
