@@ -1,6 +1,6 @@
 # st-flexible-callout-elements
 
-![example](./img/example.png)
+![example](https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/example.png)
 [Live Demo](https://flexible-callout-elements.streamlit.app)
 
 ## About
@@ -43,7 +43,7 @@ flexible_callout("This is the standard flexible callout.")
 Will result in:
 
 <p align="center" width="100%">
-  <img src="./img/standard.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/standard.png"> 
   </p>
 
 The package contains four other functions `flexible_error()`, `flexible_success()`, `flexible_warning()`, and `flexible_info()` emulating the style of `st.error`, `st.success`, `st.warning`, and `st.info`, respectively. They have most of the same arguments as `flexible_callout()` with the exception of `background_color` and `font_color` which are fixed to match their counterparts.
@@ -61,7 +61,7 @@ flexible_info("This is a slightly smaller info message", font_size=10)
 ```
 
 <p align="center" width="100%">
-  <img src="./img/emulate.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/emulate.png"> 
   </p>
 
 ### Customization
@@ -97,7 +97,7 @@ flexible_callout("You can use custom colors!", background_color="#E0B0FF", font_
 ```
 
 <p align="center" width="100%">
-  <img src="./img/custom_colors.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/custom_colors.png"> 
   </p>
 
 #### Font size and alignment
@@ -114,7 +114,7 @@ flexible_callout("Line height can also be customized within the element", contai
 ```
 
 <p align="center" width="100%">
-  <img src="./img/line_height.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/line_height.png"> 
   </p>
 
 #### Border radius, padding, margin-bottom
@@ -128,13 +128,13 @@ flexible_callout("Can have rounded boxes.", container=st.sidebar, background_col
 ```
 
 <p align="center" width="100%">
-  <img src="./img/rounded.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/rounded.png"> 
   </p>
 
 The distinction between padding and margin can be see in the box element model below:
 
 <p align="center" width="100%">
-  <img src="./img/css_box_elements.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/css_box_elements.png"> 
   </p>
 
 The distance between the content and the border can be changed using the `padding` parameter (default is 15):
@@ -146,7 +146,7 @@ flexible_callout("The boxes can be slimmer", padding=5)
 ```
 
 <p align="center" width="100%">
-  <img src="./img/padding.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/padding.png"> 
   </p>
 
 The distance between the box and the next element can be customized using the `margin_bottom` argument (default value is 20):
@@ -158,7 +158,7 @@ flexible_callout("The boxes can be slimmer", margin_bottom=0)
 ```
 
 <p align="center" width="100%">
-  <img src="./img/margin.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/margin.png"> 
   </p>
 
 #### Icon
@@ -172,7 +172,7 @@ flexible_warning("You can also add icons to your elements. e.g., emojis,", icon=
 ```
 
 <p align="center" width="100%">
-  <img src="./img/icon_emoji.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/icon_emoji.png"> 
   </p>
 
 ```
@@ -182,7 +182,7 @@ flexible_success("or icons in the <a href='https://fonts.google.com/icons?icon.s
 ```
 
 <p align="center" width="100%">
-  <img src="./img/material_icon.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/material_icon.png"> 
   </p>
 
 ```
@@ -192,7 +192,7 @@ flexible_info("You can also customize the size of the icon.", icon=":material/in
 ```
 
 <p align="center" width="100%">
-  <img src="./img/icon_size.png"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/icon_size.png"> 
   </p>
 
 ### Integration with other streamlit elements
@@ -232,6 +232,6 @@ display_rainbow_text()
 ```
 
 <p align="center" width="100%">
-  <img src="./img/fun_stuff.gif"> 
+  <img src="https://raw.githubusercontent.com/jlnetosci/st-flexible-callout-elements/main/img/fun_stuff.gif"> 
   </p>
 

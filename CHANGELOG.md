@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.1] - 2025-06-23
+
+### Fixed
+- Icon vertical alignment is now centered.
+
 ## [0.2.0] - 2025-06-22
 
 ### Added
